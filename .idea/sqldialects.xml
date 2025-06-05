@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/CiudadCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/DomicilioCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/HabResCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/HabitacionCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/HotelCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/HuespedCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/PagoCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/ReservaCRUD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/bd/java/sql/TipoHabitacionCRUD.java" dialect="GenericSQL" />
+  </component>
+</project>

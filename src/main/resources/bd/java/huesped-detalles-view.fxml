@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<VBox fx:id="ventana" alignment="TOP_CENTER" prefHeight="639.0" prefWidth="797.0" spacing="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.java.controllers.HuespedDetallesController">
+   <children>
+      <HBox prefHeight="564.0" prefWidth="793.0" spacing="10.0">
+         <children>
+            <VBox prefHeight="729.0" prefWidth="350.0" spacing="5.0">
+               <children>
+                  <Label text="Herramientas">
+                     <font>
+                        <Font name="SansSerif Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <HBox>
+                     <children>
+                        <Label text="Información">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="txtNombre" editable="false" promptText="Nombre(s)">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtApellido" editable="false" promptText="Apellido(s)">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTelefono" editable="false" promptText="Teléfono a 10 dígitos">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtCorreo" editable="false" promptText="Correo electrónico">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <HBox spacing="10.0" />
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button fx:id="btnEditarInfo" mnemonicParsing="false" onAction="#editarInfoClick" prefHeight="25.0" prefWidth="424.0" text="Editar">
+                           <font>
+                              <Font name="SansSerif Regular" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnGuardarInfo" disable="true" mnemonicParsing="false" onAction="#guardarInfoClick" prefHeight="25.0" prefWidth="424.0" text="Guardar cambios">
+                           <font>
+                              <Font name="SansSerif Regular" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox />
+                  <Separator prefWidth="200.0" />
+                  <HBox>
+                     <children>
+                        <Label text="Domicilio">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0" />
+                  <TextField fx:id="txtCalle" editable="false" prefHeight="25.0" prefWidth="240.0" promptText="Calle">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNumero" editable="false" prefHeight="25.0" prefWidth="110.0" promptText="Número">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <HBox spacing="10.0" />
+                  <TextField fx:id="txtColonia" editable="false" prefHeight="25.0" prefWidth="240.0" promptText="Colonia">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtCodigoPostal" editable="false" prefHeight="25.0" prefWidth="110.0" promptText="C.P.">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="cmbCiudad" disable="true" prefHeight="25.0" prefWidth="463.0" promptText="Ciudad" visibleRowCount="6">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <HBox spacing="10.0" />
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button fx:id="btnEditarDomi" mnemonicParsing="false" onAction="#editarDomiClick" prefHeight="25.0" prefWidth="424.0" text="Editar">
+                           <font>
+                              <Font name="SansSerif Regular" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnGuardarDomi" disable="true" mnemonicParsing="false" onAction="#guardarDomiClick" prefHeight="25.0" prefWidth="424.0" text="Guardar cambios">
+                           <font>
+                              <Font name="SansSerif Regular" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox />
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#eliminarClick" prefHeight="25.0" prefWidth="424.0" text="Eliminar cuenta" textFill="RED">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="564.0" prefWidth="381.0" spacing="5.0">
+               <children>
+                  <Label text="Reservas realizadas">
+                     <font>
+                        <Font name="SansSerif Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <ScrollPane prefHeight="524.0" prefWidth="383.0">
+                     <content>
+                        <VBox fx:id="vboxReservas" maxWidth="-Infinity" prefHeight="511.0" prefWidth="365.0" spacing="5.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#regresarClick" prefHeight="25.0" prefWidth="853.0" text="Regresar">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

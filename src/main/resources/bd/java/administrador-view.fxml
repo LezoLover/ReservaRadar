@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="ventana" alignment="TOP_CENTER" prefHeight="510.0" prefWidth="720.0" spacing="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.java.controllers.AdministradorController">
+   <children>
+      <Label text="Administrador">
+         <font>
+            <Font name="SansSerif Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <HBox spacing="10.0">
+         <children>
+            <ComboBox fx:id="cmbEntidades" onAction="#actualizarTabla" prefHeight="25.0" prefWidth="189.0" promptText="Visualizar información de:">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="488.0" spacing="10.0">
+               <children>
+                  <ComboBox fx:id="cmbEdicion" prefHeight="25.0" prefWidth="143.0" />
+                  <Button mnemonicParsing="false" onAction="#buscarClick" text="Buscar">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox fx:id="vTable" prefHeight="341.0" prefWidth="680.0">
+         <children>
+            <TableView prefHeight="415.0" prefWidth="680.0" />
+         </children>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#regresarClick" prefHeight="25.0" prefWidth="464.0" text="Regresar">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

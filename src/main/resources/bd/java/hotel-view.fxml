@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<VBox alignment="TOP_CENTER" prefHeight="614.0" prefWidth="350.0" spacing="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.java.controllers.HotelController">
+   <children>
+      <Label text="Nuevo Hotel">
+         <font>
+            <Font name="SansSerif Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label text="Información">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextField fx:id="txtNombre" promptText="Nombre del hotel">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelefono" promptText="Teléfono a 10 dígitos">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label text="Domicilio">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <TextField fx:id="txtCalle" prefHeight="25.0" prefWidth="240.0" promptText="Calle">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtNumero" prefHeight="25.0" prefWidth="110.0" promptText="Número">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <TextField fx:id="txtColonia" prefHeight="25.0" prefWidth="240.0" promptText="Colonia">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCodigoPostal" prefHeight="25.0" prefWidth="110.0" promptText="C.P.">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <ComboBox fx:id="cmbCiudad" prefHeight="25.0" prefWidth="463.0" promptText="Ciudad" visibleRowCount="6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label text="Habitaciones">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ListView prefHeight="200.0" prefWidth="200.0" />
+      <Separator prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#registrarseClick" prefHeight="30.0" prefWidth="424.0" text="Registrar">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#cancelarClick" prefHeight="25.0" prefWidth="424.0" text="Cancelar">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

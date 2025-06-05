@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="ventana" prefHeight="569.0" prefWidth="350.0" spacing="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.java.controllers.HuespedAdminController">
+   <children>
+      <Label text="Huéspedes">
+         <font>
+            <Font name="SansSerif Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <TextField fx:id="txtBusqueda" prefHeight="25.0" prefWidth="185.0" promptText="Ingrese su búsqueda">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbCriterio" prefHeight="25.0" prefWidth="75.0" promptText="?">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Button mnemonicParsing="false" onAction="#buscarClick">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../../images/busqueda.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label text="Información">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextField fx:id="txtNombre" editable="false" promptText="Nombre(s)">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtApellido" editable="false" promptText="Apellido(s)">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelefono" editable="false" promptText="Teléfono a 10 dígitos">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCorreo" editable="false" promptText="Correo electrónico">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label text="Domicilio">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <TextField fx:id="txtCalle" editable="false" prefHeight="25.0" prefWidth="240.0" promptText="Calle">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtNumero" editable="false" prefHeight="25.0" prefWidth="110.0" promptText="Número">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <TextField fx:id="txtColonia" editable="false" prefHeight="25.0" prefWidth="240.0" promptText="Colonia">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCodigoPostal" editable="false" prefHeight="25.0" prefWidth="110.0" promptText="C.P.">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <ComboBox fx:id="cmbCiudad" disable="true" prefHeight="25.0" prefWidth="463.0" promptText="Ciudad" visibleRowCount="6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <HBox spacing="10.0">
+         <children>
+            <Button fx:id="btnEditarInfo" mnemonicParsing="false" onAction="#editarInfoClick" prefHeight="25.0" prefWidth="424.0" text="Editar">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnGuardarInfo" disable="true" mnemonicParsing="false" onAction="#guardarInfoClick" prefHeight="25.0" prefWidth="424.0" text="Guardar cambios">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Button fx:id="btnEliminar" disable="true" mnemonicParsing="false" onAction="#eliminarClick" prefHeight="25.0" prefWidth="424.0" text="Eliminar" textFill="RED">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#regresarClick" prefHeight="25.0" prefWidth="853.0" text="Regresar">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

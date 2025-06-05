@@ -1,0 +1,56 @@
+/* Estilo para el contenedor principal (por ejemplo, VBox) */
+.root {
+    -fx-background-color: #2c3e50; /* Fondo general más oscuro */
+}
+
+/* Estilo para la etiqueta del título */
+.label-titulo {
+    -fx-font-family: "SansSerif";
+    -fx-font-size: 24px;
+    -fx-text-fill: #ecf0f1; /* Texto más claro */
+}
+
+/* Estilo para los botones */
+.button {
+    -fx-font-family: "SansSerif";
+    -fx-font-size: 14px;
+}
+
+.button-agendar, .button-consultar {
+    -fx-background-color: #2980b9; /* Azul oscuro */
+    -fx-text-fill: white;
+}
+
+.button-agendar:hover, .button-consultar:hover {
+    -fx-background-color: #34495e; /* Cambiado para que sea más oscuro al pasar el ratón por encima */
+}
+
+.button-agendar:pressed, .button-consultar:pressed {
+    -fx-background-color: #1f2c38; /* Azul aún más oscuro al presionar el botón */
+}
+
+.button-registrar {
+    -fx-background-color: #27ae60; /* Verde */
+    -fx-text-fill: white;
+}
+
+.button-registrar:hover {
+    -fx-background-color: #2c3e50; /* Cambiado para que sea más oscuro al pasar el ratón por encima */
+}
+
+.button-registrar:pressed {
+    -fx-background-color: #1d8348; /* Verde aún más oscuro al presionar el botón */
+}
+
+.button-administrador {
+    -fx-background-color: #f39c12; /* Amarillo */
+    -fx-text-fill: white;
+}
+
+.button-administrador:hover {
+    -fx-background-color: #d35400; /* Cambiado para que sea más oscuro al pasar el ratón por encima */
+}
+
+.button-administrador:pressed {
+    -fx-background-color: #b9770e; /* Amarillo aún más oscuro al presionar el botón */
+}
